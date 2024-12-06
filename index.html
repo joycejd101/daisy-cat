@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy's World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/responsive-nav.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="brand">Daisy's World</div>
+        <button id="navbarToggle" class="navbar-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="navbar-menu" id="navbarMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="content">
+    <section id="welcome" class="section welcome">
+        <h1>Welcome.</h1>
+        <p>We're glad you're here.</p>
+        <button class="welcome-button">learn more</button>
+    </section>
+    <section id="form-section" class="section form-section">
+        <h2>Join our mailing list for updates!</h2>
+        <form id="contactForm">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" pattern=".+@.+" />
+            <span class="error-message" id="emailError">Please enter an email address</span>
+            <button class="submit-button"><span>Submit</span></button>
+        </form>
+    </section>
+    <section id="gallery" class="section gallery">
+        <div class="image-box"><img src="images/daisy_in_cattree.jpeg" alt="daisy cat in a pink and green cat tree"></div>
+        <div class="image-box"><img src="images/daisy_on_walk.jpeg" alt="daisy cat on a walk in her carrier"></div>
+        <div class="image-box"><img src="images/daisycat_no_wanna_study.jpeg" alt="daisy cat annoyed and sitting on laptop"></div>
+    </section>
+    </main>
+    ]
+    <footer>
+        <p>&copy; 2024 Daisy's World</p>
+    </footer>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <script>
+        var nav = responsiveNav(".nav-collapse");
+    </script>
+    <script src="js/script.js"></script>
+    </body>
+</html>
